@@ -1,0 +1,90 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+
+  .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #fff;
+        border-radius: 20px;
+
+        &:hover,
+        &.active {
+          background: #fff;
+          color: #2b1055;
+        }
+      }
+    }
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &.moon {
+      mix-blend-mode: screen;
+    }
+
+    &.mountains-front {
+      z-index: 10;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+  }
+}
